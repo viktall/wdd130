@@ -1,74 +1,75 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-nav{
+nav {
     background-color: steelblue;
     padding: 10px;
 }
 
-nav a{
-    color:white;
-    display:block;
-    padding:20px;
+nav a {
+    color: white;
+    display: block;
+    padding: 20px;
 }
 
-h1{
-    color:steelblue;
+h1 {
+    color: steelblue;
 }
 
-img{
-    width:150px;
-    height:auto;
-    border:1px solid steelblue;
-    padding:2px;
-    box-shadow:0 0 30px gray;
+img {
+    width: 150px;
+    height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
 }
 
-p{
-    padding:0;
+p {
+    padding: 0;
 }
 
-main{
-    max-width:840px;
+main {
+    max-width: 840px;
 }
 
-aside{
-    width:20em;
-    text-align:center;
+aside {
+    width: 20em;
+    text-align: center;
     position: relative;
 }
 
-aside img{
-    width:200px;
-    height:auto;
+aside img {
+    width: 200px;
+    height: auto;
 }
 
-main img{
+main img {
     width: 150px;
-    height:auto;
-    float:right;
+    height: auto;
+    float: right;
 }
 
-footer{
-    margin-top:15px;
-    border-top:1px solid #000;
+footer {
+    margin-top: 15px;
+    border-top: 1px solid #000;
     text-align: center;
 }
 
-/* CSS Selectors */
-.box{
+/* Class Selectors */
+
+.box {
     margin: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 1rem;
     background-color: steelblue;
-    color:#ffffff;
+    color: #ffffff;
 }
 
-aside h2{
+aside h2 {
     position: absolute;
-    top:47px;
-    left:140px;
+    top: 47px;
+    left: 140px;
 }
