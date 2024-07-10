@@ -124,7 +124,7 @@ h2{
     padding: 0.5rem 0 0 0;
 }
 
-.adventure, .history, footer{
+.adventure, .history{
     margin-top: 2rem;
 }
 
@@ -140,6 +140,7 @@ footer{
     text-align:right;
     align-items:center;
     background-color: var(--accent2-color);
+    margin-top: 6rem;
 }
 
 .sociallinks{
