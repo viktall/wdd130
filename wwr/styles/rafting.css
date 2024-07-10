@@ -10,10 +10,16 @@
     --paragraph-font:'Open Sans', serif;
 }
 
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
 body{
     font-family:var(--paragraph-font);
-    max-width:768px;
-    padding:20px;
+    padding:20px 20px 0 20px;
+    background-color: var(--accent1-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -22,7 +28,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero{
-    background-color:var(--accent1-color);
     position:relative;
 }
 
@@ -38,9 +43,9 @@ article img{
 
 article{
     position:absolute;
-    top:40%;
+    top:32%;
     left:0; 
-    background-color:rgba(151, 195, 220, .5);
+    background-color:rgb(240, 240, 240, .6);
     padding:6px
 }
 
@@ -48,8 +53,119 @@ h1{
     position:absolute;
     top:25%; 
     left:0;
-    background-color:rgba(151, 195, 220, .5);
+    background-color:rgba(240, 240, 240, .5);
     padding:6px;
 }
+
+/* Used CSS Grid in the header to create the horizontal layout between the logo and the navigation bar. */
+header{
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-bottom: 1px solid #ccc;
+    align-items: center;
+    background-color: var(--accent2-color);
+}
+
+header img{
+    margin:0 0.2rem 0 0;
+    width:75px;
+    height:auto;
+}
+
+/* Used CSS Flex to create the horizontal layout in the nav */
+header nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav a, footer nav a{
+    display: block;
+    color:navy;
+    padding: 20px;
+    text-decoration:none ;
+}
+
+h2{
+    text-align: center;
+    padding: 2rem 0 2rem 0;
+}
+
+.history img{
+    width:300px;
+    height: auto;
+    display: block;
+}
+
+.adventure figure img{
+    width: 160px;
+    height: auto;
+    display: block;
+}
+
+.history div {
+    display: flex;
+    gap: 25px;
+    padding: 2rem;
+    background-color: var(--accent2-color);
+}
+
+.adventure div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:1rem;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+
+.adventure figure figcaption{ 
+    text-align: center;
+    padding: 0.5rem 0 0 0;
+}
+
+.adventure, .history, footer{
+    margin-top: 2rem;
+}
+
+.sociallinks img{
+    width: 22px;
+    height: auto;
+    display: block;
+}
+
+footer{
+    display:grid;
+    grid-template-columns: 3fr 2fr;
+    text-align:right;
+    align-items:center;
+    background-color: var(--accent2-color);
+}
+
+.sociallinks{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
