@@ -1,0 +1,59 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    margin:20px 5px 20px 5px;
+    background-color:#282828 ;
+}
+
+h1{
+    color:#282828
+}
+
+form{
+    background-color:#cacaca;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    gap: 20px;
+    padding:40px;
+}
+
+input, select, textarea {
+    display: block;
+    width:100%;
+    padding:5px;
+    margin-top: 6px;
+    background-color: #e8e8e8;
+    border:none;
+}
+
+input, select, textarea, button {
+    height:40px;
+}
+
+textarea {
+    height:80px;
+}
+
+button {
+    background-color:green;
+    border-radius: 6px;
+    font-size: 18px;
+    color:#fff;
+}
+
+button:hover{
+    opacity:.8;
+    cursor: pointer;
+}
+
+textarea{
+    height:80px;
+}
+
