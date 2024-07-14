@@ -236,7 +236,7 @@ footer {
 
 .contact form {
   display: flex;
-  background-color:#cacaca;;
+  background-color:#dbdbdb;
   flex-direction: column;
   gap: 10px;
   padding: 40px;
