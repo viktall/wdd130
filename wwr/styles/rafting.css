@@ -149,6 +149,13 @@ footer {
   margin-top: 6rem;
 }
 
+footer .link{
+    font-size: 14px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content:center;
+}
+
 .sociallinks {
   display: flex;
   justify-content: flex-end;
