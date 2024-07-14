@@ -1,172 +1,282 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 :root {
+  --primary-color: #020d18;
+  --secondary-color: #ffcbc2;
+  --accent1-color: #97c3dc;
+  --accent2-color: #f0f0f0;
 
-    --primary-color: #020d18;
-    --secondary-color:#ffcbc2;
-    --accent1-color:#97c3dc;
-    --accent2-color:#f0f0f0;
-
-    --heading-font:'Roboto', serif;
-    --paragraph-font:'Open Sans', serif;
+  --heading-font: "Roboto", serif;
+  --paragraph-font: "Open Sans", serif;
 }
 
-*{
-    padding:0;
-    margin:0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family:var(--paragraph-font);
-    padding:20px 20px 0 20px;
-    background-color: var(--accent1-color);
+body {
+  font-family: var(--paragraph-font);
+  padding: 20px 20px 0 20px;
+  background-color: var(--accent1-color);
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family:var(--heading-font);
-    color:var(--primary-color);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
 }
 
-.hero{
-    position:relative;
+.hero {
+  position: relative;
 }
 
-.hero > img{
-    display: block;
-    width:100%;
-    height: auto;
+.hero > img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
-article img{
-    float:right;
+article img {
+  float: right;
 }
 
-article{
-    position:absolute;
-    top:32%;
-    left:0; 
-    background-color:rgb(240, 240, 240, .6);
-    padding:6px
+article {
+  position: absolute;
+  top: 32%;
+  left: 0;
+  background-color: rgb(240, 240, 240, 0.6);
+  padding: 6px;
 }
 
-h1{
-    position:absolute;
-    top:25%; 
-    left:0;
-    background-color:rgba(240, 240, 240, .5);
-    padding:6px;
+h1 {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  background-color: rgba(240, 240, 240, 0.5);
+  padding: 6px;
 }
 
 /* Used CSS Grid in the header to create the horizontal layout between the logo and the navigation bar. */
-header{
-    margin: 1rem auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    border-bottom: 1px solid #ccc;
-    align-items: center;
-    background-color: var(--accent2-color);
+header {
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-bottom: 1px solid #ccc;
+  align-items: center;
+  background-color: var(--accent2-color);
 }
 
-header img{
-    margin:0 0.2rem 0 0;
-    width:75px;
-    height:auto;
+header img {
+  margin: 0 0.2rem 0 0;
+  width: 75px;
+  height: auto;
 }
 
 /* Used CSS Flex to create the horizontal layout in the nav */
-header nav{
-    display: flex;
-    justify-content: space-around;
+header nav {
+  display: flex;
+  justify-content: space-around;
 }
 
-header nav a, footer nav a{
-    display: block;
-    color:navy;
-    padding: 20px;
-    text-decoration:none ;
+header nav a,
+footer nav a {
+  display: block;
+  color: navy;
+  padding: 20px;
+  text-decoration: none;
 }
 
-h2{
-    text-align: center;
-    padding: 2rem 0 2rem 0;
+h2 {
+  text-align: center;
+  padding: 2rem 0 2rem 0;
 }
 
-.history img{
-    width:300px;
-    height: auto;
-    display: block;
+.history img {
+  width: 300px;
+  height: auto;
+  display: block;
 }
 
-.adventure figure img{
-    width: 160px;
-    height: auto;
-    display: block;
+.adventure figure img {
+  width: 160px;
+  height: auto;
+  display: block;
 }
 
 .history div {
-    display: flex;
-    gap: 25px;
-    padding: 2rem;
-    background-color: var(--accent2-color);
+  display: flex;
+  gap: 25px;
+  padding: 2rem;
+  background-color: var(--accent2-color);
 }
 
-.adventure div{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding:1rem;
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
+.adventure div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
 }
 
-.adventure figure figcaption{ 
-    text-align: center;
-    padding: 0.5rem 0 0 0;
+.adventure figure figcaption {
+  text-align: center;
+  padding: 0.5rem 0 0 0;
 }
 
-.adventure, .history{
-    margin-top: 2rem;
+.adventure,
+.history {
+  margin-top: 2rem;
 }
 
-.sociallinks img{
-    width: 22px;
-    height: auto;
-    display: block;
+.sociallinks img {
+  width: 22px;
+  height: auto;
+  display: block;
 }
 
-footer{
-    display:grid;
-    grid-template-columns: 3fr 2fr;
-    text-align:right;
-    align-items:center;
-    background-color: var(--accent2-color);
-    margin-top: 6rem;
+footer {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  text-align: right;
+  align-items: center;
+  background-color: var(--accent2-color);
+  margin-top: 6rem;
 }
 
-.sociallinks{
-    display: flex;
-    justify-content: flex-end;
+.sociallinks {
+  display: flex;
+  justify-content: flex-end;
 }
 
+/* contact us */
 
+.contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto 1.2fr 1.5fr auto;
+  gap:60px
+}
 
+.contact > h3 {
+  grid-column: 1/3;
+  grid-row: 1;
+  padding: 20px;
+  border-bottom: 1px solid #000;
+  text-align: center;
+  font-size: 32px;
+}
 
+.contact .testimonial {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  display: flex;
+  justify-content: center;
+  padding: 40px 5px 40px 5px;
+  column-gap: 120px;
+  background-color: #dbdbdb
+}
 
+.testimonial figure {
+  width: 100px;
+  height: 100px;
+}
 
+.testimonial img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  object-fit: cover;
+}
 
+.testimonial figcaption {
+  text-align: center;
+  font-style: italic;
+  padding:3px;
+}
 
+.contact .map {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  display: flex;
+  justify-content: center;
+}
 
+.contact .info {
+  grid-column: 1/3;
+  grid-row: 4/5;
+  display: flex;
+  justify-content: space-between;
+  background-color: #282828;
+  color:white;
+  text-align: center;
+  padding: 35px;
+}
 
+.info p {
+    padding: 3px;
+}
 
+.info h3{
+    color:orangered;
+    font-size: 24px;
+}
 
+.contact .Form {
+    justify-self: center;
+    align-self:center;
+    grid-row: 2/4;
+    grid-column: 2/3;
+  }
 
+.contact form {
+  display: flex;
+  background-color:#cacaca;;
+  flex-direction: column;
+  gap: 10px;
+  padding: 40px;
+}
 
+form label,
+#username,
+#email,
+#txt {
+  display: block;
+}
 
+#username,
+#email,
+#txt {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: none;
+}
 
+#txt {
+  height: 80px;
+}
 
+#username,
+#email {
+  height: 40px;
+}
 
+button {
+  height: 45px;
+  border-radius:3px;
+  font-size: 20px;
+  background-color:orangered;
+  color:white
+}
 
-
-
-
+button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
 
