@@ -219,7 +219,7 @@ footer .link{
   grid-row: 4/5;
   display: flex;
   justify-content: space-between;
-  background-color: #282828;
+  background-color: #101010;
   color:white;
   text-align: center;
   padding: 35px;
@@ -277,13 +277,14 @@ form label,
 button {
   height: 45px;
   border-radius:3px;
+  border:none;
   font-size: 20px;
-  background-color:orangered;
+  background-color:rgb(64, 17, 0);
   color:white
 }
 
 button:hover{
-    opacity: 0.8;
+    opacity: 0.95;
     cursor: pointer;
 }
 
