@@ -384,6 +384,10 @@ button:hover {
   height: 200px;
 }
 
+.hero article h2{
+  color:var(--primary-color)
+}
+
 .home_img .offer {
   display: flex;
   position: absolute;
